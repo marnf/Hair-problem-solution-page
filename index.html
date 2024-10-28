@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <style>
+        .help-list {
+            transition: all 200ms ease;
+            transform: translate(0, 90px) scale(.5);
+            transform-origin: bottom center;
+            opacity: 0;
+        }
+
+        .expanded .help-list {
+            transform: translate(0px, 20px) scale(1);
+            opacity: 1;
+        }
+
+
+        .help-button:hover .btn {
+            opacity: 1;
+            /* Show the span on button hover */
+            transform: translateX(-5px);
+            /* Move the span left when hovered */
+        }
+
+        .tooltip-text {
+            display: none; /* Initially hidden */
+            position: absolute;
+            left: 110%; /* Position to the right of the button */
+            top: 50%;
+            transform: translateY(-50%); /* Center vertically */
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 4px;
+            white-space: nowrap; /* Prevent text wrapping */
+            pointer-events: none; /* Prevent interference with mouse events */
+        }
+
+        .btn-hover:hover .tooltip-text {
+            display: block; /* Show the tooltip on hover */
+        }
+    </style>
+</head>
+
+<body class="bg-Light">
+    <header class="container">
+        <div class=" mx-auto py-3 text-center">
+            <h3 class="p-2">চুল সমস্যার প্রাকৃতিক সমাধান</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item youtube w-100 mh-100 d-inline-block  rounded"
+                    style=" height: 700px;" src="https://www.youtube.com/embed/U1V-xLp5dlg?si=-jhyvjUmaJXchCfr">
+                </iframe>
+            </div>
+            <h3 class="p-2 text-warning h-5">চুলের যেকোনো সমস্যার যদি প্রাকৃতিক ভাবে সমাধান করতে চান কোন
+                পার্শ্ব-প্রতিক্রিয়া ছাড়া তাহলে
+                এখনি অর্ডার করুন প্রাকৃতিক প্রায় ৩০ টি উপাদানে তৈরি Natural Hair oil</h3>
+            <button class="py-2 px-4 rounded bg-success mt-2">এখানে অর্ডার করুন</button>
+        </div>
+    </header>
+
+    <section class="bg-success w-100 p-5">
+        <div class="accordion dark-accordion bg-success container py-3" id="simpleaccordion">
+            <h4 class="h4 text-center text-white">নীচের প্রশ্নগুলো আমরা প্রতিনিয়ত পেয়ে থাকি। আশা করি এর মধ্যে আপনি আপনার
+                প্রশ্নের
+                উত্তর পেয়ে যাবেন এবং
+                আমাদের তেলের সম্পর্কে বিস্তারিত জানতে পারবেন...</h4>
+            <!-- Section 1 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">তেলের দাম কত এবং কিভাবে অর্ডার পাবো?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseOne">
+                    <div class="accordion-body text-white">২০০ ml Natural Hair Oil এর দাম ৬০০ টাকা। ডেলিভারি চার্জ ঢাকার
+                        ভেতর ৮০ টাকা। ঢাকার বাইরে ১৪০ টাকা। ২০০ ml Natural Hair Oil এর ২ বোতল নিলে ডেলিভারি চার্জ ফ্রি।
+                        সেক্ষেত্রে ১১০০ টাকা দিলেই হবে। তবে ৪০০ ml Natural Hair Oil ১ বোতল নিলে ডেলিভারি চার্জ ফ্রি।
+                        সেক্ষেত্রে ১০০০ টাকা দিলেই হবে। ডেলিভারিতে প্রোডাক্ট হাতে পাবার পর টাকা দিয়ে নিতে পারবেন। অর্ডার
+                        করতে আপনার বিস্তারিত লিখে নীচের ফর্মটি পূরণ করুন। ৩-৫ দিনের মধ্যে ডেলিভারি পাবেন।
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">হেয়ার স্পা প্যাকের দাম কত?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseTwo">
+                    <div class="accordion-body text-white">২৫০ গ্রাম হেয়ার স্পা প্যাক ৬০০ টাকা। সাথে ডেলিভারি চার্জ যোগ
+                        হবে। কম্বো অফারে ৪০০ মিলি হেয়ার অয়েল ও ২৫০ গ্রাম হেয়ার স্পা প্যাক একসাথে অর্ডার করলে ১৬০০ টাকার
+                        জায়গায় ১৫০০ টাকাতে পাবেন। ডেলিভারি চার্জ ফ্রি।</div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">আমার প্রচুর চুল পড়ছে। আমার কি চুল পড়া কম হবে কিংবা নতুন চুল
+                        গজাবে?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseThree">
+                    <div class="accordion-body text-white">চুল পড়ার বিভিন্ন কারণ থাকতে পারে। কারও বংশগত কারণে হয় কারও বা
+                        আবার প্রোটিনের অভাবে। আসলে চুল পড়া শুরু হওয়ার আগে আমরা খুব কম মানুষই চুলের যত্ন নিই। কিন্তু সময়
+                        থাকতে আপনি সঠিকভাবে যত্ন নিলে আপনি একদম টাক হয়ে যাওয়া থেকে রক্ষা পাবেন। চুলের জন্য উপকারী প্রায়
+                        ৩০ টি প্রাকৃতিক উপাদানে তৈরি আমার তেলটি ব্যবহারে চুল পড়া কমবে, নতুন চুল গজাবে, চুল লম্বা ও ঘন
+                        হবে, চুল সিল্কি, শাইনি এবং কালো হবে, খুশকি থাকলে সেটাও কমে যাবে, তেলটি ব্যবহারের অল্প কিছুদিনের
+                        মধ্যেই আপনি পরিবর্তন টা বুঝতে পারবেন। মোটকথা চুলের যেকোনো সমস্যার সমাধান আমার এই ন্যাচারাল হেয়ার
+                        অয়েল।</div>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">আমার চুল অকালে পেকে যাচ্ছে। এই তেল কি আমার চুল কালো করবে?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseFour">
+                    <div class="accordion-body text-white">অকালে চুল পেকে যাওয়া চুলের জন্য খুব খারাপ লক্ষণ। এর মানে
+                        আপনার চুলের স্বাস্থ্য ভালো নেই কিংবা প্রোটিনের অভাব। সময় থাকতে সঠিক ভাবে যত্ন না নিলে সামনে আরও
+                        ক্ষতি হবে। আমার তেলটি প্রাকৃতিক ভাবে আপনার চুলকে কালো করবে শতভাগ। বহু মানুষের অকাল পক্কতার
+                        সমাধান করছে আমার প্রাকৃতিক তেলটি।</div>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">আমার খুশকির সমস্যা আছে। এই তেল কি খুশকি দূর করবে?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseFive">
+                    <div class="accordion-body text-white">খুশকি হওয়া চুল পড়ে যাওয়ার প্রধান কারণ। আমার এই তেল নিয়মিত
+                        ব্যবহারে খুশকি শতভাগ দূর হবে এবং আপনার চুল পড়ে যাওয়া থেকে রক্ষা পাবে।</div>
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                        aria-controls="collapseSix">কি কি উপদান দিয়ে তৈরি?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseSix">
+                    <div class="accordion-body text-white">খাটি নারিকেল তেলের সাথে জবা ফুলের নির্যাস, আমলকি, মেথি,
+                        ব্রাহ্মি, কারিপাতা, শিকাকাই, রিঠা সহ প্রায় ৩০ টি প্রাকৃতিক উপাদান ব্যবহার করা হয়েছে যা চুলের
+                        জন্য অনেক অনেক উপকারী।
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 7 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                        aria-controls="collapseSeven">আপনারা কি কোন গ্যারান্টি দেন?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseSeven">
+                    <div class="accordion-body text-white">১০০% গ্যারান্টির কথা বলা বিক্রির জন্য মিথ্যার আশ্রয় ছাড়া আর
+                        কিছুই না। কারণ চুলপড়ার অনেক কারণ থাকতে পারে। অনেকের বংশগত কারণেও চুল পড়ে থাকে। আবার অনেকের
+                        প্রোটিনের অভাবে চুল পড়ে। আমরা শতভাগ গ্যারান্টি দিইনা তবে প্রাকৃতিক যেসব উপাদান চুলের জন্য
+                        উপকারী এমন প্রায় ৩০ টা উপাদান দিয়ে তেলটি তৈরি করেছি। আমি এবং আরও অনেকে উপকার পেয়েছে। আশা করছি
+                        আপনিও উপকার পাবেন। এছাড়াও আমাদের পেইজে আপনি উপকার পেয়েছে এমন মানুষের প্রচুর পরিমাণে রিভিউ দেখতে
+                        পাবেন। নিয়ম মেনে ব্যবহার করলে আপনি অবশ্যই উপকার পাবেন।
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 8 -->
+            <div class="accordion-item bg-success border-0 border-bottom">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button text-white h-5 collapsed shadow-none border-bottom bg-success"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                        aria-controls="collapseEight">আগে থেকে কোন টাকা দেয়া লাগবে?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseEight">
+                    <div class="accordion-body text-white">আগে থেকে এক টাকাও দেয়া লাগবে না। ডেলিভারি ম্যান এর কাছ থেকে
+                        প্রোডাক্ট বুঝে পেয়ে তারপর টাকা দিবেন। অর্ডার করতে নীচের ফর্মটি পূরণ করুন।
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container p-3 text-center">
+
+        <h3 class="py-3">Prising</h3>
+        <div class="container mx-auto card-deck row gap-4">
+            <div class="card  col-md pt-2 shadow-lg ">
+                <div class="card-body text-center">
+                    <p class="card-text text-success h4">ট্রায়াল কোর্স – ২০০ মিলি তেল</p>
+                    <h5 class="card-title h3">600 টাকা </h5>
+                    <p class="clard-text text-success h4">(ঢাকার ভেতর ৮০ টাকা ঢাকার বাইরে ১৪০ টাকা ডেলিভারি চার্জ
+                        যোগ হবে)</p>
+
+                </div>
+            </div>
+            <div class="card  col-md pt-2 shadow-lg">
+                <div class="card-body text-center">
+                    <p class="card-text text-success h4">ট্রায়াল কোর্স – ২০০ মিলি তেল</p>
+                    <h5 class="card-title h3">600 টাকা </h5>
+                    <p class="clard-text text-success h4">(ঢাকার ভেতর ৮০ টাকা ঢাকার বাইরে ১৪০ টাকা ডেলিভারি চার্জ
+                        যোগ হবে)</p>
+
+                </div>
+            </div>
+            <div class="card  col-md pt-2 shadow-lg">
+                <div class="card-body text-center">
+                    <p class="card-text text-success h4">ট্রায়াল কোর্স – ২০০ মিলি তেল</p>
+                    <h5 class="card-title h3">600 টাকা </h5>
+                    <p class="clard-text text-success h4">(ঢাকার ভেতর ৮০ টাকা ঢাকার বাইরে ১৪০ টাকা ডেলিভারি চার্জ
+                        যোগ হবে)</p>
+
+                </div>
+            </div>
+        </div>
+        <h3 class="mt-3">শত শত মানুষের উপকার পাওয়ার রিভিউ আমাদের ফেসবুক পেইজে আছে। তার মধ্যে থেকে কিছু রিভিউ এখানে দেয়া
+            হলঃ</h3>
+
+        <img class="w-100 h-100  img-fluid" src="./images/coments.jpg" alt="">
+
+
+    </section>
+
+    <section>
+        <div class="container my-5 border border-black rounded p-5">
+
+            <h4 class="text-center py-4">অর্ডার করতে আপনার সঠিক তথ্য দিয়ে নিচের ফর্মটি সম্পূর্ণ পূরন করুন। (আগে থেকে কোন
+                টাকা দেয়া লাগবে না। প্রোডাক্ট হাতে পাবার পর টাকা দিবেন)</h4>
+            <div class="row">
+                <!-- Billing Details -->
+                <div class="col-md-6">
+                    <h4>Billing Details</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">আপনার নাম লিখুন *</label>
+                            <input type="text" class="form-control" id="name" placeholder="আপনার নাম লিখুন" required>
+                            <small class="text-danger">আপনার নাম লিখুন is required</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">আপনার ঠিকানা লিখুন *</label>
+                            <input type="text" class="form-control" id="address"
+                                placeholder="বাসা নং, রোড নং, থানা, জেলা" required>
+                            <small class="text-danger">আপনার ঠিকানা লিখুন is required</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">আপনার মোবাইল নাম্বারটি লিখুন</label>
+                            <input type="text" class="form-control" id="phone" placeholder="মোবাইল নাম্বার">
+                        </div>
+
+                        <div class="container my-5">
+                            <h4>কোন প্যাকেজটি নিতে চান সিলেক্ট করুন</h4>
+                            <form>
+                                <!-- Package 1 -->
+                                <div class="border rounded p-3 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="package" id="package1"
+                                            value="600" required>
+                                        <label class="form-check-label w-100" for="package1">
+                                            <div class="d-flex justify-content-between">
+                                                <strong>ট্রায়াল কোর্স - ২০০ মিলি তেল</strong>
+                                            </div>
+                                            <small class="text-muted">ঢাকার ভেতরে ৮০ টাকা ডেলিভারি চার্জ, বাইরের জন্য
+                                                ১৪০ টাকা</small>
+                                            <p class="text-muted mt-2 mb-0">৳ 600.00</p>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Package 2 with Free Delivery Badge -->
+                                <div class="border rounded p-3 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="package" id="package2"
+                                            value="1000">
+                                        <label class="form-check-label w-100" for="package2">
+                                            <div class="d-flex justify-content-between">
+                                                <strong>হাফ কোর্স ৪০০ মিলি তেল</strong>
+                                                <span class="badge bg-danger">ডেলিভারি ফ্রি</span>
+                                            </div>
+                                            <small class="text-muted">ডেলিভারি চার্জ ফ্রি</small>
+                                            <p class="text-muted mt-2 mb-0"><del>৳ 1,200.00</del> <strong>৳
+                                                    1,000.00</strong></p>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Package 3 with Most Popular Badge -->
+                                <div class="border rounded p-3 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="package" id="package3"
+                                            value="1500">
+                                        <label class="form-check-label w-100" for="package3">
+                                            <div class="d-flex justify-content-between">
+                                                <strong>কম্বো প্যাকেজঃ ২৫০ গ্রাম হেয়ার স্পা + ৪০০ মিলি তেল</strong>
+                                                <span class="badge bg-primary">Most Popular</span>
+                                            </div>
+                                            <small class="text-muted">৮০০ টাকা ডিসকাউন্ট - ডেলিভারি চার্জ ফ্রি</small>
+                                            <p class="text-muted mt-2 mb-0"><strong>৳ 1,500.00</strong></p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-md-6">
+                    <h4>Your Order</h4>
+                    <div class=" p-3 mb-3">
+                        <div class="d-flex justify-content-between border-bottom ">
+                            <p>Product</p>
+                            <p>Subtotal</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <p>Hair Combo Offer</p>
+                            <p>৳ 1,500.00</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p>Subtotal</p>
+                            <p>৳ 1,500.00</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between  align-items-center">
+                            <h6>Shipping</h6>
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="shipping" id="insideDhaka"
+                                        checked>
+                                    <label class="form-check-label" for="insideDhaka">
+                                        ঢাকার ভেতর: <br> ৳ ৮০.০০
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="shipping" id="outsideDhaka">
+                                    <label class="form-check-label" for="outsideDhaka">
+                                        ঢাকার বাইরে: <br> ৳ ১৪০.০০
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="shipping" id="freeShipping">
+                                    <label class="form-check-label" for="freeShipping">
+                                        ফ্রি ডেলিভারি
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p>Total</p>
+                            <p>৳ 1,500.00</p>
+                        </div>
+                        <div class="alert alert-secondary mt-3">
+                            ক্যাশ অন ডেলিভারি <br>
+                            পণ্য হাতে পেয়ে ডেলিভারি ম্যানকে পেমেন্ট করতে পারবেন।
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Place Order ৳ 1,500.00</button>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-success text-center">কোন প্রশ্ন বা সাহায্য লাগলে কল করুনঃ 09613-651212</h3>
+        </div>
+    </section>
+
+
+    <main></main>
+    <footer>
+        <div class="help-button-wrapper position-fixed bottom-0 start-0 text-right">
+            <ul class="help-list list-unstyled">
+                <li class="pb-2 position-relative ">
+                    <button class="help-button p-4 rounded-circle bg-primary btn-hover  border border-white">
+                        <i class="fa-solid fa-phone fa-xl" style="color: #ffffff;"></i>
+                        <span class="tooltip-text">Phone এ কল দিন </span>
+                    </button>
+                </li>
+
+                <li class="pb-2  d-inline-block position-relative border border-white">
+                    <button class="help-button p-4 btn btn-hover   rounded-circle bg-primary">
+                        <i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i>
+                        <span class="tooltip-text ">WhatsApp এ কল দিন</span>
+                       
+                    </button>
+                </li>
+            </ul>
+                
+                  
+          
+
+            <button class="help-button p-4 rounded-circle bg-primary position-relative btn-hover border border-white">
+                <i class="fa-solid fa-message fa-xl" style="color: #ffffff;"></i>
+                <span class="tooltip-text ">Message</span>
+
+            </button>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $('.help-button').on('click', function () {
+            $('.help-button-wrapper').toggleClass('expanded');
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+    
+
